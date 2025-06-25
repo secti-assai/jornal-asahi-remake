@@ -205,14 +205,20 @@ function initializeMobileMenu() {
 
   if (mobileToggle && mobileMenu) {
     mobileToggle.addEventListener("click", () => {
-      mobileMenu.classList.toggle("active")
-      document.body.style.overflow = mobileMenu.classList.contains("active") ? "hidden" : "auto"
+      mobileToggle.classList.toggle("active")
+      if (mobileToggle.classList.contains("active")) {
+        mobileMenu.classList.add("active")
+        document.mobileToggle.style.overflow = "hidden"
+      } else {
+        mobileMenu.classList.remove("active")
+         document.mobileToggle.style.overflow = "auto"
+      }
     })
 
     mobileLinks.forEach((link) => {
       link.addEventListener("click", () => {
         mobileMenu.classList.remove("active")
-        document.body.style.overflow = "auto"
+         document.mobileToggle.style.overflow = "auto"
       })
     })
 

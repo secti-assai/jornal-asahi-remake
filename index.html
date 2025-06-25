@@ -39,8 +39,8 @@
 
     <!-- Main Content -->
     <main class="main-content">
+        <!-- Hero Section (mantida intacta) -->
         <section class="hero-section" id="inicio">
-            <!-- Featured News Carousel -->
             <div class="featured-news">
                 <div class="carousel-container">
                     <div class="carousel" id="newsCarousel">
@@ -74,7 +74,6 @@
                                     </div>
                                 </div>
                             </div>
-
 
                             <div class="carousel-slide">
                                 <div class="slide-image">
@@ -117,7 +116,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                         <button class="carousel-btn carousel-prev">
                             <i class="fas fa-chevron-left"></i>
@@ -136,455 +134,484 @@
                 </div>
             </div>
         </section>
+
         <div class="container">
-
             <!-- News Section -->
-            <div class="main-wrapper">
-                <!-- Featured News Carousel -->
-                <div class="highlight-stories">
-                    <div class="story-header">
-                        <div class="header-content">
-                            <h2>
-                                <i class="fas fa-star"></i>
-                                Notícias em Destaque
-                            </h2>
-                            <p>Mantenha-se informado com as últimas notícias</p>
+            <section class="news-section" id="noticias">
+    <div class="section-header">
+        <div class="section-title">
+            <h2><i class="fas fa-newspaper"></i> Notícias em Destaque</h2>
+            <p>Mantenha-se informado com as últimas notícias da cidade</p>
+        </div>
+        <div class="news-controls">
+            <button class="news-nav-btn news-prev" id="newsPrev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="news-nav-btn news-next" id="newsNext">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            <a href="#" class="view-all-btn">
+                Ver todas <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="news-slider-container">
+        <div class="news-slider" id="newsSlider">
+            <div class="news-track" id="newsTrack">
+                <!-- Slide 1 -->
+                <div class="news-slide">
+                    <article class="news-card featured">
+                        <div class="news-image">
+                            <img src="/placeholder.svg?height=300&width=500" alt="Notícia Principal">
+                            <div class="news-category">Política</div>
                         </div>
-                        <a href="#" class="explore-link">
-                            Ver todas <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-
-                    <div class="slideshow-wrapper">
-                        <div class="media-slideshow" id="mainSlideshow">
-                            <div class="slide-container">
-                                <!-- Slide 1 -->
-                                <div class="story-panel current">
-                                    <img src="/placeholder.svg?height=400&width=800"
-                                        alt="Prefeitura anuncia investimentos">
-                                    <div class="content-overlay">
-                                        <div class="panel-details">
-                                            <div class="topic-badge">Política</div>
-                                            <h3>Prefeitura de Assaí anuncia novos investimentos em educação</h3>
-                                            <p>A administração municipal apresentou um plano ambicioso para modernizar
-                                                as escolas da cidade com novas tecnologias e infraestrutura,
-                                                beneficiando mais de 5 mil estudantes.</p>
-                                            <div class="article-info">
-                                                <span class="publish-date">
-                                                    <i class="fas fa-calendar"></i>
-                                                    15 Jan 2024
-                                                </span>
-                                                <span class="writer-name">
-                                                    <i class="fas fa-user"></i>
-                                                    João Silva
-                                                </span>
-                                            </div>
-                                            <button class="action-button primary-action">
-                                                <i class="fas fa-arrow-right"></i>
-                                                Ler matéria completa
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Slide 2 -->
-                                <div class="story-panel">
-                                    <img src="/placeholder.svg?height=400&width=800" alt="Festival de Inverno">
-                                    <div class="content-overlay">
-                                        <div class="panel-details">
-                                            <div class="topic-badge cultural">Cultura</div>
-                                            <h3>Festival de Inverno movimenta economia local</h3>
-                                            <p>O evento cultural atraiu milhares de visitantes e gerou importante
-                                                receita para comerciantes e prestadores de serviços, consolidando Assaí
-                                                como destino turístico regional.</p>
-                                            <div class="article-info">
-                                                <span class="publish-date">
-                                                    <i class="fas fa-calendar"></i>
-                                                    14 Jan 2024
-                                                </span>
-                                                <span class="writer-name">
-                                                    <i class="fas fa-user"></i>
-                                                    Maria Santos
-                                                </span>
-                                            </div>
-                                            <button class="action-button primary-action">
-                                                <i class="fas fa-arrow-right"></i>
-                                                Ler matéria completa
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Slide 3 -->
-                                <div class="story-panel">
-                                    <img src="/placeholder.svg?height=400&width=800" alt="Nova unidade de saúde">
-                                    <div class="content-overlay">
-                                        <div class="panel-details">
-                                            <div class="topic-badge medical">Saúde</div>
-                                            <h3>Nova unidade de saúde será inaugurada no próximo mês</h3>
-                                            <p>A construção da UBS do bairro Vila Nova está em fase final e promete
-                                                melhorar significativamente o atendimento à população da região norte da
-                                                cidade.</p>
-                                            <div class="article-info">
-                                                <span class="publish-date">
-                                                    <i class="fas fa-calendar"></i>
-                                                    13 Jan 2024
-                                                </span>
-                                                <span class="writer-name">
-                                                    <i class="fas fa-user"></i>
-                                                    Ana Costa
-                                                </span>
-                                            </div>
-                                            <button class="action-button primary-action">
-                                                <i class="fas fa-arrow-right"></i>
-                                                Ler matéria completa
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Slide 4 -->
-                                <div class="story-panel">
-                                    <img src="/placeholder.svg?height=400&width=800" alt="Campeonato esportivo">
-                                    <div class="content-overlay">
-                                        <div class="panel-details">
-                                            <div class="topic-badge athletic">Esporte</div>
-                                            <h3>Time local conquista título do campeonato regional</h3>
-                                            <p>A vitória histórica coloca Assaí no mapa do futebol regional e traz
-                                                orgulho para toda a comunidade esportiva, após uma temporada
-                                                emocionante.</p>
-                                            <div class="article-info">
-                                                <span class="publish-date">
-                                                    <i class="fas fa-calendar"></i>
-                                                    12 Jan 2024
-                                                </span>
-                                                <span class="writer-name">
-                                                    <i class="fas fa-user"></i>
-                                                    Pedro Lima
-                                                </span>
-                                            </div>
-                                            <button class="action-button primary-action">
-                                                <i class="fas fa-arrow-right"></i>
-                                                Ler matéria completa
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Slide 5 -->
-                                <div class="story-panel">
-                                    <img src="/placeholder.svg?height=400&width=800" alt="Nova empresa">
-                                    <div class="content-overlay">
-                                        <div class="panel-details">
-                                            <div class="topic-badge financial">Economia</div>
-                                            <h3>Nova empresa gera 200 empregos na região</h3>
-                                            <p>A instalação da indústria representa um marco para o desenvolvimento
-                                                econômico local e geração de oportunidades, fortalecendo o setor
-                                                industrial da cidade.</p>
-                                            <div class="article-info">
-                                                <span class="publish-date">
-                                                    <i class="fas fa-calendar"></i>
-                                                    11 Jan 2024
-                                                </span>
-                                                <span class="writer-name">
-                                                    <i class="fas fa-user"></i>
-                                                    Roberto Alves
-                                                </span>
-                                            </div>
-                                            <button class="action-button primary-action">
-                                                <i class="fas fa-arrow-right"></i>
-                                                Ler matéria completa
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="news-content">
+                            <h3>Prefeitura anuncia novos investimentos em educação para 2024</h3>
+                            <p>A administração municipal apresentou um plano ambicioso para modernizar as escolas da cidade com novas tecnologias e infraestrutura, beneficiando mais de 5 mil estudantes.</p>
+                            <div class="news-meta">
+                                <span class="news-date"><i class="fas fa-calendar"></i> Date</span>
+                                <span class="news-author"><i class="fas fa-user"></i> Repórtere</span>
                             </div>
+                            <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
 
-                            <!-- Navigation Buttons -->
-                            <button class="nav-control prev-control" aria-label="Notícia anterior">
-                                <i class="fas fa-chevron-left"></i>
-                            </button>
-                            <button class="nav-control next-control" aria-label="Próxima notícia">
-                                <i class="fas fa-chevron-right"></i>
-                            </button>
-
-                            <!-- Indicators -->
-                            <div class="position-markers">
-                                <button class="marker-dot current" data-slide="0" aria-label="Ir para slide 1"></button>
-                                <button class="marker-dot" data-slide="1" aria-label="Ir para slide 2"></button>
-                                <button class="marker-dot" data-slide="2" aria-label="Ir para slide 3"></button>
-                                <button class="marker-dot" data-slide="3" aria-label="Ir para slide 4"></button>
-                                <button class="marker-dot" data-slide="4" aria-label="Ir para slide 5"></button>
+                <!-- Slide 2 -->
+                <div class="news-slide">
+                    <article class="news-card featured">
+                        <div class="news-image">
+                            <img src="/placeholder.svg?height=300&width=500" alt="Festival">
+                            <div class="news-category culture">Cultura</div>
+                        </div>
+                        <div class="news-content">
+                            <h3>Festival de Inverno movimenta economia local</h3>
+                            <p>O evento cultural atraiu milhares de visitantes e gerou importante receita para comerciantes e prestadores de serviços, consolidando Assaí como destino turístico regional.</p>
+                            <div class="news-meta">
+                                <span class="news-date"><i class="fas fa-calendar"></i> Date</span>
+                                <span class="news-author"><i class="fas fa-user"></i>Repórtere</span>
                             </div>
+                            <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
 
-                            <!-- Progress Bar -->
-                            <div class="timeline-track">
-                                <div class="timeline-fill"></div>
+                <!-- Slide 3 -->
+                <div class="news-slide">
+                    <article class="news-card featured">
+                        <div class="news-image">
+                            <img src="/placeholder.svg?height=300&width=500" alt="Saúde">
+                            <div class="news-category health">Saúde</div>
+                        </div>
+                        <div class="news-content">
+                            <h3>Nova unidade de saúde será inaugurada no próximo mês</h3>
+                            <p>A construção da UBS do bairro Vila Nova está em fase final e promete melhorar significativamente o atendimento à população da região norte da cidade.</p>
+                            <div class="news-meta">
+                                <span class="news-date"><i class="fas fa-calendar"></i> Date</span>
+                                <span class="news-author"><i class="fas fa-user"></i> Repórtere</span>
                             </div>
+                            <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
                         </div>
-                    </div>
+                    </article>
+                </div>
 
-                    <!-- Carousel Info -->
-                    <div class="slideshow-status">
-                        <div class="position-counter">
-                            <span class="active-number">1</span> / <span class="total-number">5</span>
+                <!-- Slide 4 -->
+                <div class="news-slide">
+                    <article class="news-card featured">
+                        <div class="news-image">
+                            <img src="/placeholder.svg?height=300&width=500" alt="Esporte">
+                            <div class="news-category sports">Esporte</div>
                         </div>
-                        <div class="playback-controls">
-                            <button class="media-button pause-control" aria-label="Pausar slideshow">
-                                <i class="fas fa-pause"></i>
-                            </button>
-                            <button class="media-button play-control hidden" aria-label="Reproduzir slideshow">
-                                <i class="fas fa-play"></i>
-                            </button>
+                        <div class="news-content">
+                            <h3>Time local conquista título do campeonato regional</h3>
+                            <p>A vitória histórica coloca Assaí no mapa do futebol regional e traz orgulho para toda a comunidade esportiva, após uma temporada emocionante.</p>
+                            <div class="news-meta">
+                                <span class="news-date"><i class="fas fa-calendar"></i> Date</span>
+                                <span class="news-author"><i class="fas fa-user"></i> Repórtere</span>
+                            </div>
+                            <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
                         </div>
-                    </div>
+                    </article>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="news-slide">
+                    <article class="news-card featured">
+                        <div class="news-image">
+                            <img src="/placeholder.svg?height=300&width=500" alt="Economia">
+                            <div class="news-category economy">Economia</div>
+                        </div>
+                        <div class="news-content">
+                            <h3>Nova empresa gera 200 empregos na região</h3>
+                            <p>A instalação da indústria representa um marco para o desenvolvimento econômico local e geração de oportunidades, fortalecendo o setor industrial da cidade.</p>
+                            <div class="news-meta">
+                                <span class="news-date"><i class="fas fa-calendar"></i> Date</span>
+                                <span class="news-author"><i class="fas fa-user"></i> Repórtere</span>
+                            </div>
+                            <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="news-slide">
+                    <article class="news-card featured">
+                        <div class="news-image">
+                            <img src="/placeholder.svg?height=300&width=500" alt="Tecnologia">
+                            <div class="news-category tech">Tecnologia</div>
+                        </div>
+                        <div class="news-content">
+                            <h3>Cidade recebe internet de alta velocidade</h3>
+                            <p>Projeto de fibra óptica chega aos bairros periféricos, democratizando o acesso à internet de qualidade e impulsionando a inclusão digital.</p>
+                            <div class="news-meta">
+                                <span class="news-date"><i class="fas fa-calendar"></i> Date</span>
+                                <span class="news-author"><i class="fas fa-user"></i> Repórtere</span>
+                            </div>
+                            <a href="#" class="read-more">Ler mais <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </article>
                 </div>
             </div>
+        </div>
 
+        <!-- Progress Bar -->
+        <div class="news-progress">
+            <div class="news-progress-bar" id="newsProgressBar"></div>
+        </div>
+
+        <!-- Indicators -->
+        <div class="news-indicators" id="newsIndicators">
+            <button class="news-indicator active" data-slide="0"></button>
+            <button class="news-indicator" data-slide="1"></button>
+            <button class="news-indicator" data-slide="2"></button>
+            <button class="news-indicator" data-slide="3"></button>
+            <button class="news-indicator" data-slide="4"></button>
+            <button class="news-indicator" data-slide="5"></button>
+        </div>
+    </div>
+</section>
+
+            <!-- Forum Section -->
+            <section class="forum-section">
+                <div class="forum-container">
+                    <div class="forum-content">
+                        <div class="forum-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="forum-text">
+                            <h2>Fórum Jovem</h2>
+                        
+                        <div class="forum-action">
+                            <button class="btn btn-primary forum-btn">
+                                <i class="fas fa-users"></i>
+                                Acessar Fórum
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </section>
 
+            <!-- Gallery Section -->
+            <section class="gallery-section" id="galeria">
+                <div class="section-header">
+                    <div class="section-title">
+                        <h2><i class="fas fa-camera"></i> Galeria de Fotos</h2>
+                        <p>Visualize todas as imagens dos principais eventos da cidade</p>
+                    </div>
+                    <a href="#" class="view-all-btn">
+                        Ver todas <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
 
+                <div class="gallery-grid">
+                    <div class="gallery-item large" data-title="Evento na praça central">
+                        <img src="/placeholder.svg?height=400&width=600" alt="Evento na praça central">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Evento na praça central</h4>
+                                <p>Celebração do aniversário da cidade</p>
+                                <span class="gallery-date">15 Jan 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-title="Inauguração da escola">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Inauguração da escola">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Inauguração da escola</h4>
+                                <span class="gallery-date">12 Jan 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-title="Festival de música">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Festival de música">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Festival de música</h4>
+                                <span class="gallery-date">10 Jan 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-title="Reunião da câmara">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Reunião da câmara">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Reunião da câmara</h4>
+                                <span class="gallery-date">08 Jan 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-title="Obras na cidade">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Obras na cidade">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Obras na cidade</h4>
+                                <span class="gallery-date">05 Jan 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-title="Evento esportivo">
+                        <img src="/placeholder.svg?height=300&width=400" alt="Evento esportivo">
+                        <div class="gallery-overlay">
+                            <div class="gallery-info">
+                                <h4>Evento esportivo</h4>
+                                <span class="gallery-date">03 Jan 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            <!--Fórum Jovem-->
-            <section class="forum-section">
+            <!-- Polls Section -->
+            <section class="polls-section">
                 <div class="section-header centered">
                     <div class="section-title">
-                        <h2>
-                            <i class="fas fa-comments"></i>
-                            Fórum Jovem
-                        </h2>
-                        <p>Espaço para discussões e troca de ideias entre os jovens da cidade</p>
+                        <h2><i class="fas fa-poll"></i> Enquetes Ativas</h2>
+                        <p>Participe e deixe sua opinião sobre temas importantes da cidade</p>
                     </div>
                 </div>
 
-                <div class="forum-content">
-                    <p>Participe do nosso fórum e compartilhe suas opiniões sobre os assuntos que mais importam para
-                        você!</p>
-                    <button class="btn btn-primary">Acessar Fórum</button>
-                </div>
-
-
-                <!-- Gallery Section -->
-                <section class="gallery-section" id="galeria">
-                    <div class="section-header">
-                        <div class="section-title">
-                            <h2>
-                                <i class="fas fa-camera"></i>
-                                Galeria
-                            </h2>
-                            <p>Visualize todas as imagens das notícias</p>
-                        </div>
-                        <a href="#" class="view-all-link">
-                            Ver todas <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-
-                    <div class="gallery-grid">
-                        <div class="gallery-item" data-title="Evento na praça central">
-                            <img src="/placeholder.svg?height=200&width=300" alt="Evento na praça central">
-                            <div class="gallery-overlay">
-                                <p>Evento na praça central</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-title="Inauguração da escola">
-                            <img src="/placeholder.svg?height=200&width=300" alt="Inauguração da escola">
-                            <div class="gallery-overlay">
-                                <p>Inauguração da escola</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-title="Festival de música">
-                            <img src="/placeholder.svg?height=200&width=300" alt="Festival de música">
-                            <div class="gallery-overlay">
-                                <p>Festival de música</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-title="Reunião da câmara">
-                            <img src="/placeholder.svg?height=200&width=300" alt="Reunião da câmara">
-                            <div class="gallery-overlay">
-                                <p>Reunião da câmara</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-title="Obras na cidade">
-                            <img src="/placeholder.svg?height=200&width=300" alt="Obras na cidade">
-                            <div class="gallery-overlay">
-                                <p>Obras na cidade</p>
-                            </div>
-                        </div>
-                        <div class="gallery-item" data-title="Evento esportivo">
-                            <img src="/placeholder.svg?height=200&width=300" alt="Evento esportivo">
-                            <div class="gallery-overlay">
-                                <p>Evento esportivo</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!--Enquetes Section-->
-                <section class="polls-section">
-                    <div class="section-header centered">
-                        <div class="section-title">
-                            <h2>
-                                <i class="fas fa-poll"></i>
-                                Enquetes
-                            </h2>
-                            <p>Participe e deixe sua opinião</p>
-                        </div>
-                    </div>
-
-                    <div class="polls-grid">
-                        <div class="poll-card">
+                <div class="polls-container">
+                    <div class="poll-card active-poll">
+                        <div class="poll-header">
                             <h3>Você apoia a construção de uma nova escola na cidade?</h3>
-                            <form class="poll-form">
-                                <label>
-                                    <input type="radio" name="poll1" value="sim"> Sim
-                                </label>
-                                <label>
-                                    <input type="radio" name="poll1" value="nao"> Não
-                                </label>
-                                <button type="submit" class="btn btn-primary">Votar</button>
-                            </form>
+                            <div class="poll-status">
+                                <span class="poll-votes">1,247 votos</span>
+                                <span class="poll-time">Termina em 5 dias</span>
+                            </div>
                         </div>
-
-                        <div class="poll-card">
-                            <h3>Qual é a sua opinião sobre o novo projeto de transporte público?</h3>
-                            <form class="poll-form">
-                                <label>
-                                    <input type="radio" name="poll2" value="bom"> Bom
+                        <form class="poll-form" data-poll="1">
+                            <div class="poll-options">
+                                <label class="poll-option">
+                                    <input type="radio" name="poll1" value="sim">
+                                    <span class="option-text">Sim, é necessário</span>
+                                    <span class="option-percentage">68%</span>
                                 </label>
-                                <label>
-                                    <input type="radio" name="poll2" value="ruim"> Ruim
+                                <label class="poll-option">
+                                    <input type="radio" name="poll1" value="nao">
+                                    <span class="option-text">Não, outras prioridades</span>
+                                    <span class="option-percentage">32%</span>
                                 </label>
-                                <button type="submit" class="btn btn-primary">Votar</button>
-                            </form>
-                        </div>
-
-                        <div class="poll-card">
-                            <h3>Você gostaria de ver mais eventos culturais na cidade?</h3>
-                            <form class="poll-form">
-                                <label>
-                                    <input type="radio" name="poll3" value="sim"> Sim
-                                </label>
-                                <label>
-                                    <input type="radio" name="poll3" value="nao"> Não
-                                </label>
-                                <button type="submit" class="btn btn-primary">Votar</button>
-                            </form>
-                        </div>
-
-
-                        <!-- Interviews Section -->
-                        <section class="interviews-section" id="entrevistas">
-                            <div class="section-header">
-                                <div class="section-title">
-                                    <h2>
-                                        <i class="fas fa-microphone"></i>
-                                        Entrevistas
-                                    </h2>
-                                    <p>Conversas com personalidades da cidade</p>
-                                </div>
-                                <a href="#" class="view-all-link">
-                                    Ver todas <i class="fas fa-arrow-right"></i>
-                                </a>
                             </div>
-
-                            <div class="interviews-grid">
-                                <div class="interview-card">
-                                    <div class="video-thumbnail">
-                                        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg"
-                                            alt="Entrevista">
-                                        <div class="play-overlay">
-                                            <i class="fas fa-play"></i>
-                                        </div>
-                                    </div>
-                                    <div class="interview-content">
-                                        <h3>Entrevista com o Prefeito sobre os novos projetos</h3>
-                                        <p class="interviewee">
-                                            <i class="fas fa-user"></i>
-                                            João Silva - Prefeito
-                                        </p>
-                                        <p class="description">Uma conversa sobre os planos para o desenvolvimento
-                                            da cidade</p>
-                                        <div class="interview-date">
-                                            <i class="fas fa-calendar"></i>
-                                            10/01/2024
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="interview-card">
-                                    <div class="video-thumbnail">
-                                        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg"
-                                            alt="Entrevista">
-                                        <div class="play-overlay">
-                                            <i class="fas fa-play"></i>
-                                        </div>
-                                    </div>
-                                    <div class="interview-content">
-                                        <h3>Diretora de Educação fala sobre reformas nas escolas</h3>
-                                        <p class="interviewee">
-                                            <i class="fas fa-user"></i>
-                                            Maria Santos - Diretora
-                                        </p>
-                                        <p class="description">Detalhes sobre os investimentos em educação</p>
-                                        <div class="interview-date">
-                                            <i class="fas fa-calendar"></i>
-                                            08/01/2024
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="interview-card">
-                                    <div class="video-thumbnail">
-                                        <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg"
-                                            alt="Entrevista">
-                                        <div class="play-overlay">
-                                            <i class="fas fa-play"></i>
-                                        </div>
-                                    </div>
-                                    <div class="interview-content">
-                                        <h3>Empresário local fala sobre desenvolvimento econômico</h3>
-                                        <p class="interviewee">
-                                            <i class="fas fa-user"></i>
-                                            Carlos Oliveira - Empresário
-                                        </p>
-                                        <p class="description">Perspectivas para o crescimento da economia local</p>
-                                        <div class="interview-date">
-                                            <i class="fas fa-calendar"></i>
-                                            05/01/2024
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-
-                        <!-- Team Section -->
-                        <section class="team-section">
-                            <div class="section-header centered">
-                                <div class="section-title">
-                                    <h2>
-                                        <i class="fas fa-users"></i>
-                                        Nossa Equipe de Repórteres
-                                    </h2>
-                                    <p>Estudantes do ensino fundamental e médio levando informação de qualidade para
-                                        toda a comunidade.</p>
-                                </div>
-                            </div>
-
-                            <div class="team-image">
-                                <img src="src/equipe.jpg"
-                                    alt="Equipe de Repórteres Mirins de Assaí">
-                            </div>
-                        </section>
+                            <button type="submit" class="btn btn-primary poll-submit">
+                                <i class="fas fa-vote-yea"></i> Votar
+                            </button>
+                        </form>
                     </div>
+
+                    <div class="poll-card">
+                        <div class="poll-header">
+                            <h3>Qual é a sua opinião sobre o novo projeto de transporte público?</h3>
+                            <div class="poll-status">
+                                <span class="poll-votes">892 votos</span>
+                                <span class="poll-time">Termina em 3 dias</span>
+                            </div>
+                        </div>
+                        <form class="poll-form" data-poll="2">
+                            <div class="poll-options">
+                                <label class="poll-option">
+                                    <input type="radio" name="poll2" value="excelente">
+                                    <span class="option-text">Excelente iniciativa</span>
+                                    <span class="option-percentage">45%</span>
+                                </label>
+                                <label class="poll-option">
+                                    <input type="radio" name="poll2" value="bom">
+                                    <span class="option-text">Bom, mas pode melhorar</span>
+                                    <span class="option-percentage">38%</span>
+                                </label>
+                                <label class="poll-option">
+                                    <input type="radio" name="poll2" value="ruim">
+                                    <span class="option-text">Não atende necessidades</span>
+                                    <span class="option-percentage">17%</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary poll-submit">
+                                <i class="fas fa-vote-yea"></i> Votar
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="poll-card">
+                        <div class="poll-header">
+                            <h3>Você gostaria de ver mais eventos culturais na cidade?</h3>
+                            <div class="poll-status">
+                                <span class="poll-votes">1,456 votos</span>
+                                <span class="poll-time">Termina em 1 dia</span>
+                            </div>
+                        </div>
+                        <form class="poll-form" data-poll="3">
+                            <div class="poll-options">
+                                <label class="poll-option">
+                                    <input type="radio" name="poll3" value="sim">
+                                    <span class="option-text">Sim, definitivamente</span>
+                                    <span class="option-percentage">82%</span>
+                                </label>
+                                <label class="poll-option">
+                                    <input type="radio" name="poll3" value="nao">
+                                    <span class="option-text">Não, está bom assim</span>
+                                    <span class="option-percentage">18%</span>
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary poll-submit">
+                                <i class="fas fa-vote-yea"></i> Votar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Interviews Section -->
+            <section class="interviews-section" id="entrevistas">
+                <div class="section-header">
+                    <div class="section-title">
+                        <h2><i class="fas fa-microphone"></i> Entrevistas Exclusivas</h2>
+                        <p>Conversas com personalidades e autoridades da cidade</p>
+                    </div>
+                    <a href="#" class="view-all-btn">
+                        Ver todas <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="interviews-grid">
+                    <div class="interview-card featured">
+                        <div class="video-thumbnail">
+                            <img src="/placeholder.svg?height=300&width=500" alt="Entrevista com Prefeito">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="video-duration">15:32</div>
+                        </div>
+                        <div class="interview-content">
+                            <div class="interview-category">Política</div>
+                            <h3>Entrevista com o Prefeito sobre os novos projetos para 2024</h3>
+                            <p class="interviewee">
+                                <i class="fas fa-user"></i>
+                                João Silva - Prefeito Municipal
+                            </p>
+                            <p class="description">Uma conversa detalhada sobre os planos para o desenvolvimento da cidade, incluindo investimentos em educação, saúde e infraestrutura.</p>
+                            <div class="interview-stats">
+                                <span class="views"><i class="fas fa-eye"></i> 2.3k visualizações</span>
+                                <span class="date"><i class="fas fa-calendar"></i> 10/01/2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interview-card">
+                        <div class="video-thumbnail">
+                            <img src="/placeholder.svg?height=200&width=350" alt="Entrevista Educação">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="video-duration">12:45</div>
+                        </div>
+                        <div class="interview-content">
+                            <div class="interview-category education">Educação</div>
+                            <h3>Diretora de Educação fala sobre reformas nas escolas</h3>
+                            <p class="interviewee">
+                                <i class="fas fa-user"></i>
+                                Maria Santos - Diretora de Educação
+                            </p>
+                            <div class="interview-stats">
+                                <span class="views"><i class="fas fa-eye"></i> 1.8k visualizações</span>
+                                <span class="date"><i class="fas fa-calendar"></i> 08/01/2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interview-card">
+                        <div class="video-thumbnail">
+                            <img src="/placeholder.svg?height=200&width=350" alt="Entrevista Empresário">
+                            <div class="play-overlay">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="video-duration">18:20</div>
+                        </div>
+                        <div class="interview-content">
+                            <div class="interview-category economy">Economia</div>
+                            <h3>Empresário local fala sobre desenvolvimento econômico</h3>
+                            <p class="interviewee">
+                                <i class="fas fa-user"></i>
+                                Carlos Oliveira - Empresário
+                            </p>
+                            <div class="interview-stats">
+                                <span class="views"><i class="fas fa-eye"></i> 1.2k visualizações</span>
+                                <span class="date"><i class="fas fa-calendar"></i> 05/01/2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section class="team-section">
+                <div class="team-container">
+                    <div class="team-content">
+                        <div class="team-text">
+                            <h2><i class="fas fa-users"></i> Nossa Equipe de Repórteres</h2>
+                            <p>Estudantes do ensino fundamental e médio levando informação de qualidade para toda a comunidade de Assaí.</p>
+                            <div class="team-highlights">
+                                <div class="highlight">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Quantidade de Repórteres</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-newspaper"></i>
+                                    <span>Matérias publicadas</span>
+                                </div>
+                                <div class="highlight">
+                                    <i class="fas fa-award"></i>
+                                    <span>Prêmios</span>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary">
+                                <i class="fas fa-info-circle"></i>
+                                Conheça a Equipe
+                            </button>
+                        </div>
+                        <div class="team-image">
+                            <img src="/placeholder.svg?height=400&width=600" alt="Equipe de Repórteres Mirins de Assaí">
+                            <div class="team-badge">
+                                <i class="fas fa-star"></i>
+                                <span>Equipe 2025</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
-
-
-
 
     <!-- Image Modal -->
     <div class="modal" id="imageModal">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 id="modalTitle">Imagem da notícia</h3>
+                <h3 id="modalTitle">Imagem da galeria</h3>
                 <button class="modal-close">&times;</button>
             </div>
             <div class="modal-body">
@@ -592,12 +619,11 @@
             </div>
             <div class="modal-footer">
                 <button class="btn btn-primary">
-                    Ir para a notícia <i class="fas fa-arrow-right"></i>
+                    Ver mais fotos <i class="fas fa-arrow-right"></i>
                 </button>
             </div>
         </div>
     </div>
-
 
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
@@ -647,7 +673,6 @@
             </div>
         </div>
     </footer>
-
 
     <script src="script.js"></script>
 </body>

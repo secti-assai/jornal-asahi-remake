@@ -23,10 +23,20 @@ body {
 .header {
   background: #fff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  border-bottom: 4px solid #3b82f6;
   position: sticky;
   top: 0;
   z-index: 100;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  height: 4px;
+  background: linear-gradient(to right, #f97316, #f5cc29); /* laranja para amarelo */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header-content {
@@ -48,28 +58,9 @@ body {
   gap: 1rem;
 }
 
-.logo {
-  width: 48px;
-  height: 48px;
-  background: #3b82f6;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.logo-text h1 {
-  font-size: 1.875rem;
-  font-weight: 800;
-  color: #1f2937;
-  margin-bottom: 0.25rem;
-}
-
-.logo-text p {
-  font-size: 0.875rem;
-  color: #6b7280;
+.logo-image {
+  width: 276px;
+  height: 72px;
 }
 
 .nav-menu {
@@ -87,7 +78,7 @@ body {
 
 .nav-link:hover,
 .nav-link.active {
-  color: #3b82f6;
+  color: #f5cc29;
 }
 
 .nav-link.active::after {
@@ -97,7 +88,7 @@ body {
   left: 0;
   right: 0;
   height: 2px;
-  background: #3b82f6;
+  background: #f97316;
   border-radius: 1px;
 }
 
@@ -153,24 +144,25 @@ body {
 
 .carousel-track {
   position: relative;
-  width: 100%;
-  height: 100%;
+  height: 100%; /* ou defina uma altura */
 }
 
 .carousel-slide {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
+  z-index: 0;
   width: 100%;
   height: 100%;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  display: flex;
-  flex-direction: row;
+  transition: opacity 0.8s ease-in-out;
+  pointer-events: none;
 }
 
 .carousel-slide.active {
   opacity: 1;
+  z-index: 1;
+  pointer-events: auto;
 }
 
 .slide-image {
@@ -865,7 +857,7 @@ a:focus {
   padding: 1rem 2rem;
   border: none;
   border-radius: 12px;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   display: inline-flex;
@@ -873,17 +865,22 @@ a:focus {
   gap: 0.5rem;
   text-decoration: none;
   font-size: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-primary {
-  background: #3b82f6;
+  background: linear-gradient(to right, #f97316, #facc15); /* Laranja degradê */
   color: white;
 }
 
 .btn-primary:hover {
-  background: #2563eb;
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  filter: brightness(1.05);
 }
+
 
 .btn-danger {
   background: #dc2626;
@@ -1052,7 +1049,7 @@ a:focus {
   background: #1f2937;
   color: white;
   padding: 3rem 0 1rem;
-  width: 1200px;
+  width: 100%;
 }
 
 .footer-content {
